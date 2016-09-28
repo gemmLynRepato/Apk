@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="pink">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+     <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+
+  </head>
+  <body class='theme-black'>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block content-fill color-white">
+      <div class = "leftpanel">
+        <center><h3> <u>DEFINITIONS </u></h3>
+        <p> <b> &emsp;Mean:</b> The average value of the 
+        entire set of numbers.</p>
+		<p><b>&emsp;Median:</b> The middle value between the smallest and largest in a set of numbers.</p>
+		<p><b>&emsp;Mode:</b> The number which appears most often in a set of numbers.</p><br><br><br>
+	<h3> <font style ="color:gray"><u>About Me</u></h3>
+<p> Hello! </p>
+I'm GemmaLyn Repato<br>
+18 years of age <br>
+From Aguilar, Pangasinan<br>
+Third Year College<br>
+Taking up BS IT in PSU-LC<br></font></center>
+      </div>
+    </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block content-fill color-white">
+     <div class = "rightpanel">
+<center><h3> <u>HOW TO SOLVE </u></h3>
+<b> Mean </b> <ol> 
+<li> Add all of the numbers in the set. </li>
+<li> Count the amount of numbers in the set. </li>
+<li> Divide the sum of the numbers by the amount of numbers. </li> </ol>
+<b> Median </b> <ol>
+<li> Sort all of the numbers in the set from least to greatest. </li>
+<li> If the count of numbers is odd, the median is the middle number. </li>
+<li> If the count of numbers is even, the median will be the mean of the two central numbers. </li> </ol>
+<b> Mode </b> <ol>
+<li> Find the number that occurs the most. </li></ol></center>
+      </div>
+    </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+           <div class="left"><a href="#" data-panel="right" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+           <div class="center sliding"> <i class="material-icons">android</i>&nbsp; Mean Median Mode</div>
+           
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Index Page-->
+          <div data-page="index" class="page">
+            <div class="page-content">
+			<div class = "content">
+              <div class="content-block">
+                <div class="content-block-inner"> <br>
+               <center><i><b>&nbsp;WELCOME TO MY SIMPLE APP&nbsp;</i></b><br></center>
+                   <font size=3 color=black><b><CENTER>This app calculates the Mean, Median and Mode.Try It! Thank You&nbsp;<i class="material-icons">mood</i></CENTER></font></b>
+                </div>
+              </div>
+           <!-- Scrollable page content -->
+                        <div class="page-content">
+                            <div class='content-block'>
+                                <div class="list-block">
+                                    <ul>
+                                        <!-- Text inputs -->
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <b><div class="item-title label">Set of Numbers</div></b>
+                                                    <div class="item-input">
+                                                        <input id='input_ages' type="text" placeholder="Enter Set of Numbers">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <button id='btn_calc' class='button button-fill color-pink'>Calculate</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <font size=3 color=black><b><CENTER><div id='statSolutions'>Solutions:</div> </CENTER></b></font><br><br><br>                
+              <div class="content-block-title">Side panels</div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col-50 "><a href="#" data-panel="left" class="button open-panel button-fill color-pink">Left Panel</a></div>
+                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel button-fill color-pink ">Right Panel</a></div><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner"><a href="#" class="link">Make Sure of all Things</a><a href="#" class="link">Smile&nbsp;<i class="material-icons">mood</i> </a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>    
+    <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/process.js"></script>
+  </body>
+</html>
